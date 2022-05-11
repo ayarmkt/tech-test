@@ -1,0 +1,17 @@
+.hero {
+}
+
+.hero h1 {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 70px;
+}
+
+.hero p {
+  font-size: var(--text-large);
+}
+
+.get-started-btn {
+  height: 56px;
+  padding: 0 23px;
+}
