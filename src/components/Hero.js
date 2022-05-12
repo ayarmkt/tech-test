@@ -1,9 +1,13 @@
-import classes from './Hero.module.css';
-import Button from '../UI/Button/Button';
+import Button from '../UI/Button';
+import { StyledHero } from './styles/Hero.styled';
+import { useContext } from 'react';
+import { ThemeContext } from 'styled-components';
 
 const Hero = () => {
+  const themeContext = useContext(ThemeContext);
+
   return (
-    <div className={classes.hero}>
+    <StyledHero>
       <h1>
         Where hiring
         <br />
@@ -15,10 +19,12 @@ const Hero = () => {
         and make a great impression.
       </p>
       <Button
-        className={classes['get-started-btn']}
         text='Get started — It’s free!'
+        height='56px'
+        padding='0 23px'
+        bgColor={themeContext.colors.purple}
       />
-    </div>
+    </StyledHero>
   );
 };
 
