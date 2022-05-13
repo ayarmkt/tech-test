@@ -2,7 +2,6 @@ import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import ContentLabel from '../UI/ContentLabel';
 import SectionTitle from '../UI/SectionTitle';
-import { StyledImageSection } from './styles/FeatureItem.styled';
 import { StyledFeatureItem } from './styles/FeatureItem.styled';
 import { StyledTextSection } from './styles/FeatureItem.styled';
 
