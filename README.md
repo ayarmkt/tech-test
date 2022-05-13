@@ -1,7 +1,7 @@
 # Marketing frontend coding challenge
 
 ## Task
-Integrate as much as you can of the given design
+Integrate as much as you can of the given design<br/>
 **Further Information:** https://gist.github.com/danolife/38a1797325c1a7db0c196b8c281cb634
 
 ## Tech Stack
@@ -10,7 +10,7 @@ Platform: GitHub Pages
 
 ## Final Product
 
-**Live Site:** https://ayarmkt.github.io/front-dev-challenge
+**Live Site:** https://ayarmkt.github.io/marketing-frontend-coding-challenge
 
 ## Getting Started
 
