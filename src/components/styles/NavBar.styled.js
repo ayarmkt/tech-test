@@ -4,7 +4,6 @@ export const StyledNavBar = styled.nav`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
   font: ${({ theme }) => theme.fonts.nav};
 
   a {

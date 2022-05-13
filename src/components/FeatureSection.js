@@ -13,6 +13,7 @@ const FeatureSection = () => {
           title={content.title}
           text={content.text}
           color={content.color}
+          image={content.image}
         />
       ))}
     </section>

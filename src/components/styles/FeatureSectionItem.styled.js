@@ -6,8 +6,12 @@ export const StyledFeatureItemSection = styled.article`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid red;
   flex-direction: ${({ direction }) => direction};
+  margin-top: 50px;
+
+  img {
+    width: 50%;
+  }
 `;
 
 export const StyledTextSection = styled.div`
