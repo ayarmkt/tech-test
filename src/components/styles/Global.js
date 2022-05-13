@@ -9,9 +9,9 @@ const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font: ${({ theme }) => theme.fonts.textRegular};
     color: ${({ theme }) => theme.colors.black}; 
-    font: ${({ theme }) => theme.basic.font};
-    background-color: ${({ theme }) => theme.colors.lightgray}
+    
   }
 `;
 

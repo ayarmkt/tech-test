@@ -5,7 +5,7 @@ export const StyledNavBar = styled.nav`
   align-items: center;
   justify-content: space-between;
   border: 1px solid red;
-  font: ${({ theme }) => theme.nav.font};
+  font: ${({ theme }) => theme.fonts.nav};
 
   a {
     display: flex;
@@ -20,7 +20,7 @@ export const StyledNavBar = styled.nav`
   }
 `;
 
-export const StyledLogin = styled.button`
+export const StyledLoginBtn = styled.button`
   color: ${({ theme }) => theme.colors.purple};
   background-color: transparent;
   border: none;

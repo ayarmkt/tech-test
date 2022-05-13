@@ -1,13 +1,13 @@
-import './App.css';
-import appImage from './assets/app.png';
 import { ThemeProvider } from 'styled-components';
-import Hero from './components/Hero';
-import NavBar from './components/NavBar';
-import Reassurance from './components/Reassurance';
-import FeatureSection from './components/FeatureSection';
 import GlobalStyles from './components/styles/Global';
-import { sectionContent } from './data/section-content';
-import TrialSection from './components/TrialSection';
+import NavBar from './components/NavBar';
+import Hero from './components/Hero';
+import Reassurance from './components/Reassurance';
+import AppImage from './components/AppImage';
+import FeatureSection from './components/FeatureSection';
+import PushTrialSection from './components/PushTrialSection';
+import FeatureDetailsSection from './components/FeatureDetailsSection';
+import { StyledApp } from './App.styled';
 
 const theme = {
   colors: {
@@ -15,23 +15,21 @@ const theme = {
     purple: '#7348ff',
     gray: '#f2f1f0',
     lightgray: '#FBFAF9',
+    yellow: '#FFB423',
+    green: '#179690',
+    lightblue: '#33D1EA',
+    red: '#FF2E57',
+    white: '#FFFFFF',
   },
-  basic: {
-    font: '400 20px Inter',
-  },
-  nav: {
-    font: '500 16px Inter',
-    //lineHeight: '24px',
-  },
-  title: {
-    font: '800 64px Manrope',
-    //lineHeight: '70px',
-  },
-  subTitle: {
-    font: '800 40px Manrope',
-  },
-  button: {
-    //font: '500 Inter',
+  fonts: {
+    textRegular: '400 20px Inter',
+    textSmall: '400 16px Inter',
+    button: '500 18px Inter',
+    nav: '500 16px Inter',
+    mainTitle: '800 64px Manrope',
+    sectionTitle: '800 40px Manrope',
+    contentTitle: '800 20px Manrope',
+    contentLabel: '800 16px Manrope',
   },
 };
 
@@ -39,26 +37,30 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <div className='container'>
+      <StyledApp>
         <NavBar />
         <Hero />
         <Reassurance />
-        <img src={appImage} alt='screen' />
-        {sectionContent.map((content, index) => (
-          <FeatureSection
-            key={index}
-            index={index}
-            label={content.label}
-            title={content.title}
-            text={content.text}
-            color={content.color}
-          />
-        ))}
+        <AppImage />
+        <FeatureSection />
 
-        <TrialSection />
-        {/* FURTHER DETAILS */}
-        {/* START TRIAL SECTION */}
-      </div>
+        <PushTrialSection
+          bgColor={theme.colors.purple}
+          color={theme.colors.white}
+          order={null}
+          flexDirection='row'
+          btnColor={theme.colors.black}
+          showAdditionalText={false}
+        />
+        <FeatureDetailsSection />
+        <PushTrialSection
+          order={1}
+          flexDirection='column'
+          textAlign='center'
+          btnColor={theme.colors.purple}
+          showAdditionalText={true}
+        />
+      </StyledApp>
     </ThemeProvider>
   );
 }
