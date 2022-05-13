@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.js": "/marketing-frontend-coding-challenge/static/js/main.ee322ac9.js",
-    "static/media/feature-3.png": "/marketing-frontend-coding-challenge/static/media/feature-3.d7189c621c61bc0e8ee7.png",
-    "static/media/feature-2.png": "/marketing-frontend-coding-challenge/static/media/feature-2.ebdb1f138ffafbd8a509.png",
-    "static/media/feature-1.png": "/marketing-frontend-coding-challenge/static/media/feature-1.670c1ac438e764ef7ae1.png",
-    "static/media/app.png": "/marketing-frontend-coding-challenge/static/media/app.06224fbd709ca1b8a8df.png",
-    "static/media/accept-reject.png": "/marketing-frontend-coding-challenge/static/media/accept-reject.b97188c1723b3560c212.png",
-    "static/media/employer-branding.png": "/marketing-frontend-coding-challenge/static/media/employer-branding.de8becedc073170c547c.png",
-    "static/media/notes.png": "/marketing-frontend-coding-challenge/static/media/notes.1b4257b785758fcd109d.png",
-    "static/media/custom-tag.png": "/marketing-frontend-coding-challenge/static/media/custom-tag.a92cd98460746ca6f4c7.png",
-    "static/media/team-collaboration.png": "/marketing-frontend-coding-challenge/static/media/team-collaboration.d36709ab1595f5852bc2.png",
-    "static/media/job-editor.png": "/marketing-frontend-coding-challenge/static/media/job-editor.877e0aa49e02f388cce1.png",
-    "index.html": "/marketing-frontend-coding-challenge/index.html",
-    "main.ee322ac9.js.map": "/marketing-frontend-coding-challenge/static/js/main.ee322ac9.js.map"
+    "main.js": "/tech-test/static/js/main.ea930cb0.js",
+    "static/media/feature-3.png": "/tech-test/static/media/feature-3.d7189c621c61bc0e8ee7.png",
+    "static/media/feature-2.png": "/tech-test/static/media/feature-2.ebdb1f138ffafbd8a509.png",
+    "static/media/feature-1.png": "/tech-test/static/media/feature-1.670c1ac438e764ef7ae1.png",
+    "static/media/app.png": "/tech-test/static/media/app.06224fbd709ca1b8a8df.png",
+    "static/media/accept-reject.png": "/tech-test/static/media/accept-reject.b97188c1723b3560c212.png",
+    "static/media/employer-branding.png": "/tech-test/static/media/employer-branding.de8becedc073170c547c.png",
+    "static/media/notes.png": "/tech-test/static/media/notes.1b4257b785758fcd109d.png",
+    "static/media/custom-tag.png": "/tech-test/static/media/custom-tag.a92cd98460746ca6f4c7.png",
+    "static/media/team-collaboration.png": "/tech-test/static/media/team-collaboration.d36709ab1595f5852bc2.png",
+    "static/media/job-editor.png": "/tech-test/static/media/job-editor.877e0aa49e02f388cce1.png",
+    "index.html": "/tech-test/index.html",
+    "main.ea930cb0.js.map": "/tech-test/static/js/main.ea930cb0.js.map"
   },
   "entrypoints": [
-    "static/js/main.ee322ac9.js"
+    "static/js/main.ea930cb0.js"
   ]
 }
