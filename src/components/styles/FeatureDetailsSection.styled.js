@@ -35,7 +35,6 @@ export const StyledArticle = styled.article`
     0px 1px 1px rgba(27, 27, 26, 0.12), 0px 0px 0px 1px rgba(27, 27, 26, 0.12);
   display: grid;
   grid-template-rows: 1fr auto auto;
-  padding: 30px;
 
   img {
     padding: 0 10px;
@@ -44,16 +43,20 @@ export const StyledArticle = styled.article`
     align-self: center;
   }
 
-  h3 {
-    font: ${({ theme }) => theme.fonts.contentTitle};
-    color: ${({ color }) => color};
-    grid-row: 2;
-  }
+  div {
+    padding: 30px;
 
-  p {
-    font: ${({ theme }) => theme.fonts.textSmall};
-    color: ${({ color }) => color};
-    grid-row: 3;
+    h3 {
+      font: ${({ theme }) => theme.fonts.contentTitle};
+      color: ${({ color }) => color};
+      grid-row: 2;
+    }
+
+    p {
+      font: ${({ theme }) => theme.fonts.textSmall};
+      color: ${({ color }) => color};
+      grid-row: 3;
+    }
   }
 `;
 

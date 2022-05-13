@@ -38,8 +38,10 @@ const FeatureDetailsSection = () => {
             }
           >
             <img src={item.image} alt='editor'></img>
-            <h3>{item.label}</h3>
-            <p>{item.text}</p>
+            <div>
+              <h3>{item.label}</h3>
+              <p>{item.text}</p>
+            </div>
           </StyledArticle>
         ))}
       </StyledDetailsContainer>
