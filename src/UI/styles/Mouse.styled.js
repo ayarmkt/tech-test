@@ -6,9 +6,9 @@ export const StyledMouseName = styled.div`
   padding: 5px 10px;
   background-color: black;
   border-radius: 8px;
-  position: relative;
-  top: -5px;
-  left: 30px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
   font: 600 12px Inter;
   color: ${({ theme }) => theme.colors.white};
   background-color: ${({ bgColor }) => bgColor};

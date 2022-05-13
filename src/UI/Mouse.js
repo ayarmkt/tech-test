@@ -4,7 +4,13 @@ import { StyledMouseName } from './styles/Mouse.styled';
 const Mouse = ({ text, bgColor, className }) => {
   return (
     <div className={className}>
-      <BsCursorFill style={{ transform: 'scale(-1, 1)', fill: bgColor }} />
+      <BsCursorFill
+        style={{
+          transform: 'scale(-1, 1)',
+          fill: bgColor,
+          position: 'relative',
+        }}
+      />
       <StyledMouseName bgColor={bgColor}>{text}</StyledMouseName>
     </div>
   );

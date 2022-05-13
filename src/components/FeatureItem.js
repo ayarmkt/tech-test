@@ -2,16 +2,14 @@ import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import ContentLabel from '../UI/ContentLabel';
 import SectionTitle from '../UI/SectionTitle';
-import { StyledImageSection } from './styles/FeatureSectionItem.styled';
-import { StyledFeatureItemSection } from './styles/FeatureSectionItem.styled';
-import { StyledTextSection } from './styles/FeatureSectionItem.styled';
+import { StyledImageSection } from './styles/FeatureItem.styled';
+import { StyledFeatureItem } from './styles/FeatureItem.styled';
+import { StyledTextSection } from './styles/FeatureItem.styled';
 
-const FeatureSectionItem = ({ index, label, title, text, color, image }) => {
+const FeatureItem = ({ index, label, title, text, color, image }) => {
   const themeContext = useContext(ThemeContext);
   return (
-    <StyledFeatureItemSection
-      direction={index % 2 === 0 ? 'row' : 'row-reverse'}
-    >
+    <StyledFeatureItem direction={index % 2 === 0 ? 'row' : 'row-reverse'}>
       <StyledTextSection>
         <ContentLabel labelText={label} color={color} />
         <SectionTitle
@@ -21,10 +19,10 @@ const FeatureSectionItem = ({ index, label, title, text, color, image }) => {
         <p>{text}</p>
       </StyledTextSection>
       <img src={image} alt={label} />
-    </StyledFeatureItemSection>
+    </StyledFeatureItem>
   );
 };
 
-export default FeatureSectionItem;
+export default FeatureItem;
 
 // <StyledImageSection></StyledImageSection>

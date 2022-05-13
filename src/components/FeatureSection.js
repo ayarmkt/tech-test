@@ -1,12 +1,12 @@
 import { sectionContent } from '../data/section-content';
-import FeatureSectionItem from './FeatureSectionItem';
+import FeatureItem from './FeatureItem';
 import { StyledFeatureSection } from './styles/FeatureSection.styled';
 
 const FeatureSection = () => {
   return (
-    <section>
+    <StyledFeatureSection>
       {sectionContent.map((content, index) => (
-        <FeatureSectionItem
+        <FeatureItem
           key={index}
           index={index}
           label={content.label}
@@ -16,7 +16,7 @@ const FeatureSection = () => {
           image={content.image}
         />
       ))}
-    </section>
+    </StyledFeatureSection>
   );
 };
 

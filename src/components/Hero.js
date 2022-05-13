@@ -2,8 +2,8 @@ import Button from '../UI/Button';
 import { StyledHero } from './styles/Hero.styled';
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-import Mouse from '../UI/Mouse';
 import { StyledMouse } from './styles/Hero.styled';
+import { StyledHeroTitle } from './styles/Hero.styled';
 
 const Hero = () => {
   const themeContext = useContext(ThemeContext);
@@ -13,33 +13,32 @@ const Hero = () => {
       <StyledMouse
         text='Lily'
         bgColor={themeContext.colors.lightblue}
-        top='13%'
-        left='63%'
+        top='115px'
+        left='195px'
       />
       <StyledMouse
         text='Alexandre'
         bgColor={themeContext.colors.yellow}
-        top='7%'
-        left='26%'
+        top='50px'
+        left='-300px'
       />
       <StyledMouse
         text='Bouba'
         bgColor={themeContext.colors.green}
-        top='41%'
-        left='24%'
+        top='200px'
+        left='-330px'
       />
       <StyledMouse
         text='Charlotte'
         bgColor={themeContext.colors.red}
-        top='50%'
-        left='67%'
+        top='215px'
+        left='270px'
       />
-
-      <h1>
+      <StyledHeroTitle>
         Where hiring
         <br />
         comes together.
-      </h1>
+      </StyledHeroTitle>
       <p>
         Everything you need to organise your hiring
         <br />

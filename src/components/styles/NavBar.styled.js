@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledNavBar = styled.nav`
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -16,6 +17,14 @@ export const StyledNavBar = styled.nav`
     grid-template-columns: repeat(4, auto);
     grid-gap: 3vw;
     list-style: none;
+
+    li {
+      font: ${({ theme }) => theme.fonts.nav};
+    }
+  }
+
+  button {
+    font: ${({ theme }) => theme.fonts.nav};
   }
 `;
 
