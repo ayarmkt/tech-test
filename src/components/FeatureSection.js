@@ -1,24 +1,21 @@
-import { useContext } from 'react';
-import { ThemeContext } from 'styled-components';
-import SubTitle from '../UI/SubTitle';
-import {
-  StyledImageSection,
-  StyledFeatureSection,
-  StyledLabel,
-} from './styles/FeatureSection.styled';
+import { sectionContent } from '../data/section-content';
+import FeatureSectionItem from './FeatureSectionItem';
+import { StyledFeatureSection } from './styles/FeatureSection.styled';
 
-const FeatureSection = ({ label, title, text, index, color }) => {
-  const themeContext = useContext(ThemeContext);
-
+const FeatureSection = () => {
   return (
-    <StyledFeatureSection direction={index % 2 === 0 ? 'row' : 'row-reverse'}>
-      <div>
-        <StyledLabel color={color}>{label}</StyledLabel>
-        <SubTitle text={title} color={themeContext.colors.black} />
-        <p>{text}</p>
-      </div>
-      <StyledImageSection>aa</StyledImageSection>
-    </StyledFeatureSection>
+    <section>
+      {sectionContent.map((content, index) => (
+        <FeatureSectionItem
+          key={index}
+          index={index}
+          label={content.label}
+          title={content.title}
+          text={content.text}
+          color={content.color}
+        />
+      ))}
+    </section>
   );
 };
 

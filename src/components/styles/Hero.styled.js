@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
-export const StyledHero = styled.div`
+export const StyledHero = styled.section`
   width: 100%;
+  height: 60vh;
   text-align: center;
-  padding: 25px 0;
   border: 1px solid red;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ export const StyledHero = styled.div`
   justify-content: center;
 
   h1 {
-    font: ${({ theme }) => theme.title.font};
+    font: ${({ theme }) => theme.fonts.mainTitle};
   }
 
   p {

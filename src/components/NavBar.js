@@ -2,7 +2,7 @@ import CompanyLogo from '../assets/company-logo.png';
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import Button from '../UI/Button';
-import { StyledNavBar, StyledLogin } from './styles/NavBar.styled';
+import { StyledNavBar, StyledLoginBtn } from './styles/NavBar.styled';
 import { BsChevronDown } from 'react-icons/bs';
 
 const NavBar = () => {
@@ -29,7 +29,7 @@ const NavBar = () => {
         </li>
       </ul>
       <div>
-        <StyledLogin>Log in</StyledLogin>
+        <StyledLoginBtn>Log in</StyledLoginBtn>
         <Button
           text='Start 14-day trial'
           height='40px'
