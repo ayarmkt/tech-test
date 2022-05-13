@@ -10,7 +10,7 @@ Platform: GitHub Pages
 
 ## Final Product
 
-**Live Site:** https://ayarmkt.github.io/marketing-frontend-coding-challenge
+**Live Site:** https://ayarmkt.github.io/tech-test/
 
 ## Getting Started
 
