@@ -6,7 +6,7 @@ import { StyledImageSection } from './styles/FeatureSectionItem.styled';
 import { StyledFeatureItemSection } from './styles/FeatureSectionItem.styled';
 import { StyledTextSection } from './styles/FeatureSectionItem.styled';
 
-const FeatureSectionItem = ({ index, label, title, text, color }) => {
+const FeatureSectionItem = ({ index, label, title, text, color, image }) => {
   const themeContext = useContext(ThemeContext);
   return (
     <StyledFeatureItemSection
@@ -20,9 +20,11 @@ const FeatureSectionItem = ({ index, label, title, text, color }) => {
         />
         <p>{text}</p>
       </StyledTextSection>
-      <StyledImageSection>aa</StyledImageSection>
+      <img src={image} alt={label} />
     </StyledFeatureItemSection>
   );
 };
 
 export default FeatureSectionItem;
+
+// <StyledImageSection></StyledImageSection>

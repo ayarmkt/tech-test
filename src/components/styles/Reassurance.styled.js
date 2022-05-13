@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const StyledReassuranceContainer = styled.section`
   height: 100px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -10,11 +9,9 @@ export const StyledReassuranceContainer = styled.section`
 
   p {
     font: ${({ theme }) => theme.fonts.textSmall};
-    border: 1px solid red;
   }
 
   div {
-    border: 1px solid red;
     display: flex;
     align-items: center;
 

@@ -3,8 +3,6 @@ import styled from 'styled-components';
 export const StyledPushTrialSection = styled.section`
   height: 40vh;
   width: 100%;
-
-  border: 1px solid red;
   background-color: ${({ bgColor }) => bgColor};
   border-radius: 12px;
   padding: 0 25px;
@@ -13,6 +11,7 @@ export const StyledPushTrialSection = styled.section`
   justify-content: space-evenly;
   align-items: center;
   position: relative;
+  margin: 100px 0;
 
   p {
     font: ${({ theme }) => theme.fonts.contentLabel};
