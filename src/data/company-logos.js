@@ -1,10 +1,10 @@
-import GitHub from '../assets/logos/github.png';
-import Dropbox from '../assets/logos/dropbox.png';
-import Spotify from '../assets/logos/spotify.png';
-import Facebook from '../assets/logos/facebook.png';
-import Apple from '../assets/logos/apple.png';
-import Netflix from '../assets/logos/netflix.png';
-import Google from '../assets/logos/google.png';
+import GitHub from '../assets/logos/github.svg';
+import Dropbox from '../assets/logos/dropbox.svg';
+import Spotify from '../assets/logos/spotify.svg';
+import Facebook from '../assets/logos/facebook.svg';
+import Apple from '../assets/logos/apple.svg';
+import Netflix from '../assets/logos/netflix.svg';
+import Google from '../assets/logos/google.svg';
 
 export const companyLogos = [
   { name: 'Google', logoImg: Google },
