@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const StyledPushTrialSection = styled.section`
-  height: 40vh;
+  height: 35vh;
   width: 100%;
   background-color: ${({ bgColor }) => bgColor};
   border-radius: 12px;
@@ -24,6 +24,10 @@ export const StyledPushTrialSection = styled.section`
       padding: 0 10px;
     }
   }
+
+  button {
+    margin: 40px 0;
+  }
 `;
 
 export const StyledAdditionalText = styled.p`
@@ -37,7 +41,7 @@ export const StyledBGText = styled.p`
   opacity: 0.08;
   line-height: 0.8;
   position: absolute;
-  top: 45px;
+  top: 80px;
   left: -20px;
 `;
 

@@ -19,8 +19,7 @@ const PushTrialSection = ({
 }) => {
   const themeContext = useContext(ThemeContext);
 
-  const iconStyle = { fill: color };
-  console.log(flexDirection);
+  const iconStyle = { fill: color, verticalAlign: 'middle' };
 
   return (
     <StyledPushTrialSection
@@ -42,12 +41,10 @@ const PushTrialSection = ({
       />
       <ul>
         <li>
-          <BsCheck2 style={iconStyle} />
-          Totally free for 15 days
+          <BsCheck2 style={iconStyle} /> Totally free for 15 days
         </li>
         <li>
-          <BsCheck2 style={iconStyle} />
-          No credit card needed
+          <BsCheck2 style={iconStyle} /> No credit card needed
         </li>
       </ul>
       <Button
