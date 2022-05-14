@@ -6,7 +6,10 @@ import Apple from '../assets/logos/apple.svg';
 import Netflix from '../assets/logos/netflix.svg';
 import Google from '../assets/logos/google.svg';
 
-export const companyLogos = [
+export const companyLogos: Array<{
+  name: string;
+  logoImg: string;
+}> = [
   { name: 'Google', logoImg: Google },
   { name: 'Apple', logoImg: Apple },
   { name: 'Facebook', logoImg: Facebook },

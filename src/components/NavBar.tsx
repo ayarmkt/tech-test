@@ -1,3 +1,4 @@
+import React from 'react';
 import CompanyLogo from '../assets/company-logo.png';
 import { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
@@ -5,7 +6,7 @@ import Button from '../UI/Button';
 import { StyledNavBar, StyledLoginBtn } from './styles/NavBar.styled';
 import { BsChevronDown } from 'react-icons/bs';
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   const themeContext = useContext(ThemeContext);
 
   const iconStyle = {
@@ -32,7 +33,7 @@ const NavBar = () => {
         <StyledLoginBtn>Log in</StyledLoginBtn>
         <Button
           text='Start 14-day trial'
-          height='40px'
+          heightSetting='40px'
           padding='0 16px'
           bgColor={themeContext.colors.purple}
         />

@@ -1,6 +1,14 @@
 import styled from 'styled-components';
+import { Props } from '../PushTrialSection';
 
-export const StyledPushTrialSection = styled.section`
+interface IPushTrialSection {
+  bgColor: Props['bgColor'];
+  flexDirection: Props['flexDirection'];
+  order?: Props['order'];
+  color: Props['color'];
+}
+
+export const StyledPushTrialSection = styled.section<IPushTrialSection>`
   height: 35vh;
   width: 100%;
   background-color: ${({ bgColor }) => bgColor};
@@ -44,8 +52,3 @@ export const StyledBGText = styled.p`
   top: 80px;
   left: -20px;
 `;
-
-//padding: 0 25px;
-//background-color: ${({ theme }) => theme.colors.purple};
-//justify-content: ${({ justifyContent }) => justifyContent}
-// order: ${({ order }) => order};

@@ -22,5 +22,3 @@ export const StyledReassuranceContainer = styled.section`
     }
   }
 `;
-
-// height: 20px;

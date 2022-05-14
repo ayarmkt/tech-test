@@ -6,7 +6,13 @@ import Notes from '../assets/featureDetails/notes.png';
 import AcceptReject from '../assets/featureDetails/accept-reject.png';
 import TeamCollaboration from '../assets/featureDetails/team-collaboration.png';
 
-export const detailItems = [
+export const detailItems: Array<{
+  label: string;
+  text: string;
+  span: number;
+  bgColor: string;
+  image: string;
+}> = [
   {
     label: 'Job Editor',
     text: 'Our easy-to-use editor allows you to create customized job ads within minutes.',

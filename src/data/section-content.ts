@@ -2,7 +2,13 @@ import Feature1 from '../assets/feature/feature-1.png';
 import Feature2 from '../assets/feature/feature-2.png';
 import Feature3 from '../assets/feature/feature-3.png';
 
-export const sectionContent = [
+export const sectionContent: Array<{
+  label: string;
+  title: string;
+  text: string;
+  color: string;
+  image: string;
+}> = [
   {
     label: 'Organize',
     title: 'Organize your hiring',

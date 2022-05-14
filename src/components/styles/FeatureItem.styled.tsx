@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const StyledFeatureItem = styled.article`
+interface IFeatureItem {
+  direction: string;
+}
+
+export const StyledFeatureItem = styled.article<IFeatureItem>`
   width: 100%;
   display: flex;
   align-items: center;

@@ -1,6 +1,11 @@
 import { createGlobalStyle } from 'styled-components';
+import { ThemeType } from '../../App';
 
-const GlobalStyles = createGlobalStyle`
+interface Props {
+  theme: ThemeType;
+}
+
+const GlobalStyles = createGlobalStyle<Props>`
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Manrope:wght@800&display=swap');

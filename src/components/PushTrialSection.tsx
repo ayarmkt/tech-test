@@ -1,5 +1,4 @@
-import { useContext } from 'react';
-import { ThemeContext } from 'styled-components';
+import React from 'react';
 import Button from '../UI/Button';
 import SectionTitle from '../UI/SectionTitle';
 import { StyledPushTrialSection } from './styles/PushTrialSection.styled';
@@ -7,18 +6,27 @@ import { BsCheck2 } from 'react-icons/bs';
 import { StyledBGText } from './styles/PushTrialSection.styled';
 import { StyledAdditionalText } from './styles/PushTrialSection.styled';
 
-const PushTrialSection = ({
+export interface Props {
+  bgColor?: string;
+  color?: string;
+  order?: number;
+  flexDirection: string;
+  textAlignSetting?: string;
+  btnColor: string;
+  showAdditionalText: boolean;
+  showBGText: boolean;
+}
+
+const PushTrialSection: React.FC<Props> = ({
   bgColor,
   color,
   order,
   flexDirection,
-  textAlign,
+  textAlignSetting,
   btnColor,
   showAdditionalText,
   showBGText,
 }) => {
-  const themeContext = useContext(ThemeContext);
-
   const iconStyle = { fill: color, verticalAlign: 'middle' };
 
   return (
@@ -36,8 +44,8 @@ const PushTrialSection = ({
       <SectionTitle
         sectionTitleText='Start your free Homerun trial today'
         color={color}
-        width='450px'
-        textAlign={textAlign}
+        widthAmount='450px'
+        textAlignSetting={textAlignSetting}
       />
       <ul>
         <li>
@@ -49,7 +57,7 @@ const PushTrialSection = ({
       </ul>
       <Button
         text='Get started — It’s free!'
-        height='56px'
+        heightSetting='56px'
         padding='0 25px'
         bgColor={btnColor}
       />
