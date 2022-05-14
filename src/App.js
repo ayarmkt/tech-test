@@ -51,6 +51,7 @@ function App() {
           flexDirection='row'
           btnColor={theme.colors.black}
           showAdditionalText={false}
+          showBGText={true}
         />
         <FeatureDetailsSection />
         <PushTrialSection
@@ -59,6 +60,7 @@ function App() {
           textAlign='center'
           btnColor={theme.colors.purple}
           showAdditionalText={true}
+          showBGText={false}
         />
       </StyledApp>
     </ThemeProvider>

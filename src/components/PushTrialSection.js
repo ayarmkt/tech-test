@@ -5,6 +5,7 @@ import SectionTitle from '../UI/SectionTitle';
 import { StyledPushTrialSection } from './styles/PushTrialSection.styled';
 import { BsCheck2 } from 'react-icons/bs';
 import { StyledBGText } from './styles/PushTrialSection.styled';
+import { StyledAdditionalText } from './styles/PushTrialSection.styled';
 
 const PushTrialSection = ({
   bgColor,
@@ -14,6 +15,7 @@ const PushTrialSection = ({
   textAlign,
   btnColor,
   showAdditionalText,
+  showBGText,
 }) => {
   const themeContext = useContext(ThemeContext);
 
@@ -26,11 +28,12 @@ const PushTrialSection = ({
       color={color}
       order={order}
       flexDirection={flexDirection}
-      showAdditionalText={showAdditionalText}
 
       //justifyContent={flexDirection === 'row' ? 'space-evenly' : 'center'}
     >
-      {showAdditionalText && <p>What are you waiting for?</p>}
+      {showAdditionalText && (
+        <StyledAdditionalText>What are you waiting for?</StyledAdditionalText>
+      )}
       <SectionTitle
         sectionTitleText='Start your free Homerun trial today'
         color={color}
@@ -53,11 +56,13 @@ const PushTrialSection = ({
         padding='0 25px'
         bgColor={btnColor}
       />
-      <StyledBGText>
-        Get
-        <br />
-        started
-      </StyledBGText>
+      {showBGText && (
+        <StyledBGText>
+          Get
+          <br />
+          started
+        </StyledBGText>
+      )}
     </StyledPushTrialSection>
   );
 };

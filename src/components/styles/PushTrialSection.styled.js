@@ -13,11 +13,6 @@ export const StyledPushTrialSection = styled.section`
   position: relative;
   margin: 100px 0;
 
-  p {
-    font: ${({ theme }) => theme.fonts.contentLabel};
-    color: ${({ theme }) => theme.colors.purple};
-  }
-
   ul {
     list-style: none;
     display: flex;
@@ -31,14 +26,19 @@ export const StyledPushTrialSection = styled.section`
   }
 `;
 
+export const StyledAdditionalText = styled.p`
+  font: ${({ theme }) => theme.fonts.contentLabel};
+  color: ${({ theme }) => theme.colors.purple};
+`;
+
 export const StyledBGText = styled.p`
   font: 800 168px Manrope;
   color: white;
   opacity: 0.08;
   line-height: 0.8;
   position: absolute;
-  top: 15%;
-  left: -5%;
+  top: 45px;
+  left: -20px;
 `;
 
 //padding: 0 25px;
