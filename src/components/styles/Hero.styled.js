@@ -3,7 +3,7 @@ import Mouse from '../../UI/Mouse';
 
 export const StyledHero = styled.section`
   width: 100%;
-  height: 500px;
+  height: 550px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -17,10 +17,11 @@ export const StyledHero = styled.section`
 
 export const StyledHeroTitle = styled.h1`
   font: ${({ theme }) => theme.fonts.mainTitle};
+  position: relative;
 `;
 
 export const StyledMouse = styled(Mouse)`
-  position: relative;
+  position: absolute;
   top: ${({ top }) => top};
   left: ${({ left }) => left};
 `;

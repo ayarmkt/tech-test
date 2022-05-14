@@ -13,11 +13,14 @@ export const StyledReassuranceContainer = styled.section`
 
   div {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
+    height: 20px;
 
     img {
-      height: 20px;
-      margin: 0 15px;
+      height: 100%;
+      margin: 0 25px;
     }
   }
 `;
+
+// height: 20px;
