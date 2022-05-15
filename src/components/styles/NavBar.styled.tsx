@@ -16,6 +16,10 @@ export const StyledNavBar = styled.nav`
 
     li {
       font: ${({ theme }) => theme.fonts.nav};
+
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 `;
@@ -24,7 +28,11 @@ export const StyledHomeLink = styled.button`
   display: flex;
   align-items: center;
   border: none;
-  background-color: none;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const StyledLoginBtn = styled.button`
@@ -32,6 +40,10 @@ export const StyledLoginBtn = styled.button`
   background-color: transparent;
   border: none;
   margin-right: 3vw;
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const StyledTrialBtn = styled(Button)`

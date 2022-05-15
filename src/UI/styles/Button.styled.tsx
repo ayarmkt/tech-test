@@ -18,4 +18,8 @@ export const StyledButton = styled.button<IButton>`
     0px 0px 0px 1px ${({ bgColor }) => bgColor};
   height: ${({ height }) => height};
   padding: ${({ padding }) => padding};
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
