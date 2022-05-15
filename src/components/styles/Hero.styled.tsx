@@ -1,6 +1,11 @@
 import styled from 'styled-components';
 import Mouse from '../../UI/Mouse';
 
+interface IMouse {
+  topPos: string;
+  leftPos: string;
+}
+
 export const StyledHero = styled.section`
   width: 100%;
   height: 550px;
@@ -20,8 +25,8 @@ export const StyledHeroTitle = styled.h1`
   position: relative;
 `;
 
-export const StyledMouse = styled(Mouse)`
+export const StyledMouse = styled(Mouse)<IMouse>`
   position: absolute;
-  top: ${({ top }) => top};
-  left: ${({ left }) => left};
+  top: ${({ topPos }) => topPos};
+  left: ${({ leftPos }) => leftPos};
 `;

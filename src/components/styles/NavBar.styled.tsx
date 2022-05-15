@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Button from '../../UI/Button';
 
 export const StyledNavBar = styled.nav`
   width: 100%;
@@ -6,11 +7,6 @@ export const StyledNavBar = styled.nav`
   align-items: center;
   justify-content: space-between;
   font: ${({ theme }) => theme.fonts.nav};
-
-  a {
-    display: flex;
-    align-items: center;
-  }
 
   ul {
     display: grid;
@@ -22,10 +18,13 @@ export const StyledNavBar = styled.nav`
       font: ${({ theme }) => theme.fonts.nav};
     }
   }
+`;
 
-  button {
-    font: ${({ theme }) => theme.fonts.nav};
-  }
+export const StyledHomeLink = styled.button`
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: none;
 `;
 
 export const StyledLoginBtn = styled.button`
@@ -33,4 +32,8 @@ export const StyledLoginBtn = styled.button`
   background-color: transparent;
   border: none;
   margin-right: 3vw;
+`;
+
+export const StyledTrialBtn = styled(Button)`
+  font: ${({ theme }) => theme.fonts.nav};
 `;

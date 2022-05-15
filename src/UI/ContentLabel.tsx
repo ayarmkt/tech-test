@@ -1,6 +1,12 @@
+import React from 'react';
 import { StyledContentLabel } from './styles/ContentLabel.styled';
 
-const ContentLabel = ({ color, labelText }) => {
+export interface Props {
+  color: string;
+  labelText: string;
+}
+
+const ContentLabel: React.FC<Props> = ({ color, labelText }): JSX.Element => {
   return <StyledContentLabel color={color}>{labelText}</StyledContentLabel>;
 };
 

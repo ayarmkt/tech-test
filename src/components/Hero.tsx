@@ -1,11 +1,9 @@
-import Button from '../UI/Button';
-import { StyledHero } from './styles/Hero.styled';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-import { StyledMouse } from './styles/Hero.styled';
-import { StyledHeroTitle } from './styles/Hero.styled';
+import Button from '../UI/Button';
+import { StyledHero, StyledMouse, StyledHeroTitle } from './styles/Hero.styled';
 
-const Hero = () => {
+const Hero: React.FC = (): JSX.Element => {
   const themeContext = useContext(ThemeContext);
 
   return (
@@ -18,26 +16,26 @@ const Hero = () => {
           <StyledMouse
             text='Lily'
             bgColor={themeContext.colors.lightblue}
-            top='-10px'
-            left='450px'
+            topPos='-10px'
+            leftPos='450px'
           />
           <StyledMouse
             text='Alexandre'
             bgColor={themeContext.colors.yellow}
-            top='-40px'
-            left='-40px'
+            topPos='-40px'
+            leftPos='-40px'
           />
           <StyledMouse
             text='Bouba'
             bgColor={themeContext.colors.green}
-            top='135px'
-            left='-65px'
+            topPos='135px'
+            leftPos='-65px'
           />
           <StyledMouse
             text='Charlotte'
             bgColor={themeContext.colors.red}
-            top='180px'
-            left='530px'
+            topPos='180px'
+            leftPos='530px'
           />
         </StyledHeroTitle>
         <p>

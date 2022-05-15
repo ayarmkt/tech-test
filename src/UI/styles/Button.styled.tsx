@@ -1,6 +1,13 @@
 import styled from 'styled-components';
+import { Props } from '../Button';
 
-export const StyledButton = styled.button`
+interface IButton {
+  height: Props['height'];
+  padding: Props['padding'];
+  bgColor: Props['bgColor'];
+}
+
+export const StyledButton = styled.button<IButton>`
   font: ${({ theme }) => theme.fonts.button};
   background-color: ${({ bgColor }) => bgColor};
   border-radius: 8px;
@@ -12,7 +19,3 @@ export const StyledButton = styled.button`
   height: ${({ height }) => height};
   padding: ${({ padding }) => padding};
 `;
-
-//   background-color: var(--purple);
-//${({ theme }) => theme.fonts.button}]
-//  font: 500 18px Inter;

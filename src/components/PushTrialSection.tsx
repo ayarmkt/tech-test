@@ -1,34 +1,42 @@
-import { useContext } from 'react';
-import { ThemeContext } from 'styled-components';
+import React from 'react';
 import Button from '../UI/Button';
 import SectionTitle from '../UI/SectionTitle';
-import { StyledPushTrialSection } from './styles/PushTrialSection.styled';
+import {
+  StyledPushTrialSection,
+  StyledBGText,
+  StyledAdditionalText,
+} from './styles/PushTrialSection.styled';
 import { BsCheck2 } from 'react-icons/bs';
-import { StyledBGText } from './styles/PushTrialSection.styled';
-import { StyledAdditionalText } from './styles/PushTrialSection.styled';
 
-const PushTrialSection = ({
+export interface Props {
+  bgColor?: string;
+  color?: string;
+  flexDirection: string;
+  textAlignSetting?: string;
+  btnColor: string;
+  showAdditionalText: boolean;
+  showBGText: boolean;
+  showInfoAtTheEnd: boolean;
+}
+
+const PushTrialSection: React.FC<Props> = ({
   bgColor,
   color,
-  order,
   flexDirection,
-  textAlign,
+  textAlignSetting,
   btnColor,
   showAdditionalText,
   showBGText,
+  showInfoAtTheEnd,
 }) => {
-  const themeContext = useContext(ThemeContext);
-
   const iconStyle = { fill: color, verticalAlign: 'middle' };
 
   return (
     <StyledPushTrialSection
       bgColor={bgColor}
       color={color}
-      order={order}
+      order={showInfoAtTheEnd ? 1 : 0}
       flexDirection={flexDirection}
-
-      //justifyContent={flexDirection === 'row' ? 'space-evenly' : 'center'}
     >
       {showAdditionalText && (
         <StyledAdditionalText>What are you waiting for?</StyledAdditionalText>
@@ -36,8 +44,8 @@ const PushTrialSection = ({
       <SectionTitle
         sectionTitleText='Start your free Homerun trial today'
         color={color}
-        width='450px'
-        textAlign={textAlign}
+        widthAmount='450px'
+        textAlignSetting={textAlignSetting}
       />
       <ul>
         <li>

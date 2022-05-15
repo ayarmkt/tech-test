@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import SectionTitle from '../UI/SectionTitle';
 import {
@@ -9,7 +9,7 @@ import {
 } from './styles/FeatureDetailsSection.styled';
 import { detailItems } from '../data/detail-items';
 
-const FeatureDetailsSection = () => {
+const FeatureDetailsSection: React.FC = (): JSX.Element => {
   const themeContext = useContext(ThemeContext);
 
   return (
@@ -29,7 +29,7 @@ const FeatureDetailsSection = () => {
         {detailItems.map((item, index) => (
           <StyledArticle
             key={index}
-            span={item.span}
+            spanAmount={item.span}
             bgColor={themeContext.colors[`${item.bgColor}`]}
             color={
               item.bgColor === 'white'

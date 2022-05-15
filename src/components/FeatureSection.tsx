@@ -1,8 +1,9 @@
+import React from 'react';
 import { sectionContent } from '../data/section-content';
 import FeatureItem from './FeatureItem';
 import { StyledFeatureSection } from './styles/FeatureSection.styled';
 
-const FeatureSection = () => {
+const FeatureSection: React.FC = () => {
   return (
     <StyledFeatureSection>
       {sectionContent.map((content, index) => (

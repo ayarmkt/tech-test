@@ -1,7 +1,14 @@
+import React from 'react';
 import { BsCursorFill } from 'react-icons/bs';
 import { StyledMouseName } from './styles/Mouse.styled';
 
-const Mouse = ({ text, bgColor, className }) => {
+export interface Props {
+  text: string;
+  bgColor: string;
+  className?: string;
+}
+
+const Mouse: React.FC<Props> = ({ text, bgColor, className }): JSX.Element => {
   return (
     <div className={className}>
       <BsCursorFill
@@ -17,5 +24,3 @@ const Mouse = ({ text, bgColor, className }) => {
 };
 
 export default Mouse;
-
-//position: 'relative'

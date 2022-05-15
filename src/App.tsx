@@ -1,3 +1,5 @@
+import React from 'react';
+import { StyledApp } from './App.styled';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './components/styles/Global';
 import NavBar from './components/NavBar';
@@ -7,7 +9,6 @@ import AppImage from './components/AppImage';
 import FeatureSection from './components/FeatureSection';
 import PushTrialSection from './components/PushTrialSection';
 import FeatureDetailsSection from './components/FeatureDetailsSection';
-import { StyledApp } from './App.styled';
 
 const theme = {
   colors: {
@@ -33,7 +34,9 @@ const theme = {
   },
 };
 
-function App() {
+type ThemeType = typeof theme;
+
+const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
@@ -43,28 +46,28 @@ function App() {
         <Reassurance />
         <AppImage />
         <FeatureSection />
-
         <PushTrialSection
           bgColor={theme.colors.purple}
           color={theme.colors.white}
-          order={null}
           flexDirection='row'
           btnColor={theme.colors.black}
           showAdditionalText={false}
           showBGText={true}
+          showInfoAtTheEnd={false}
         />
         <FeatureDetailsSection />
         <PushTrialSection
-          order={1}
           flexDirection='column'
-          textAlign='center'
+          textAlignSetting='center'
           btnColor={theme.colors.purple}
           showAdditionalText={true}
           showBGText={false}
+          showInfoAtTheEnd={true}
         />
       </StyledApp>
     </ThemeProvider>
   );
-}
+};
 
 export default App;
+export { ThemeType };

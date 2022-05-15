@@ -1,6 +1,11 @@
 import styled from 'styled-components';
+import { Props } from '../Mouse';
 
-export const StyledMouseName = styled.div`
+interface IMouseName {
+  bgColor: Props['bgColor'];
+}
+
+export const StyledMouseName = styled.div<IMouseName>`
   width: auto;
   height: 26px;
   padding: 5px 10px;
