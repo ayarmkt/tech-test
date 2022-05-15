@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/tech-test/static/js/main.ea930cb0.js",
+    "main.js": "/tech-test/static/js/main.4075277e.js",
     "static/media/feature-3.png": "/tech-test/static/media/feature-3.d7189c621c61bc0e8ee7.png",
     "static/media/feature-2.png": "/tech-test/static/media/feature-2.ebdb1f138ffafbd8a509.png",
     "static/media/feature-1.png": "/tech-test/static/media/feature-1.670c1ac438e764ef7ae1.png",
@@ -11,10 +11,17 @@
     "static/media/custom-tag.png": "/tech-test/static/media/custom-tag.a92cd98460746ca6f4c7.png",
     "static/media/team-collaboration.png": "/tech-test/static/media/team-collaboration.d36709ab1595f5852bc2.png",
     "static/media/job-editor.png": "/tech-test/static/media/job-editor.877e0aa49e02f388cce1.png",
+    "static/media/spotify.svg": "/tech-test/static/media/spotify.d506ac52d0493e31b879537ae0c68827.svg",
+    "static/media/dropbox.svg": "/tech-test/static/media/dropbox.64ac1e63c649d72fa6282ee009c808b6.svg",
+    "static/media/google.svg": "/tech-test/static/media/google.531bef15864afcb085ed84028e4ddb37.svg",
+    "static/media/facebook.svg": "/tech-test/static/media/facebook.d6d24de5884563fc384586d24173d2c8.svg",
+    "static/media/github.svg": "/tech-test/static/media/github.f2b510f5cfb32a8df9fa9c4b4c5d55b9.svg",
+    "static/media/netflix.svg": "/tech-test/static/media/netflix.49522d00a60104914f5922828e787834.svg",
+    "static/media/apple.svg": "/tech-test/static/media/apple.8968d63bd23c8758084a8d8e44a8a1a5.svg",
     "index.html": "/tech-test/index.html",
-    "main.ea930cb0.js.map": "/tech-test/static/js/main.ea930cb0.js.map"
+    "main.4075277e.js.map": "/tech-test/static/js/main.4075277e.js.map"
   },
   "entrypoints": [
-    "static/js/main.ea930cb0.js"
+    "static/js/main.4075277e.js"
   ]
 }
