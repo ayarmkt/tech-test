@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/tech-test/static/js/main.de167a24.js",
+    "main.js": "/tech-test/static/js/main.8fe1dc5c.js",
     "static/media/feature-3.png": "/tech-test/static/media/feature-3.d7189c621c61bc0e8ee7.png",
     "static/media/feature-2.png": "/tech-test/static/media/feature-2.ebdb1f138ffafbd8a509.png",
     "static/media/feature-1.png": "/tech-test/static/media/feature-1.670c1ac438e764ef7ae1.png",
@@ -19,9 +19,9 @@
     "static/media/netflix.svg": "/tech-test/static/media/netflix.49522d00a60104914f5922828e787834.svg",
     "static/media/apple.svg": "/tech-test/static/media/apple.8968d63bd23c8758084a8d8e44a8a1a5.svg",
     "index.html": "/tech-test/index.html",
-    "main.de167a24.js.map": "/tech-test/static/js/main.de167a24.js.map"
+    "main.8fe1dc5c.js.map": "/tech-test/static/js/main.8fe1dc5c.js.map"
   },
   "entrypoints": [
-    "static/js/main.de167a24.js"
+    "static/js/main.8fe1dc5c.js"
   ]
 }
