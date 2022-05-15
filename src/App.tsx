@@ -46,27 +46,23 @@ const App: React.FC = () => {
         <Reassurance />
         <AppImage />
         <FeatureSection />
-
         <PushTrialSection
           bgColor={theme.colors.purple}
           color={theme.colors.white}
-          //order={null}
           flexDirection='row'
-          //textAlign
           btnColor={theme.colors.black}
           showAdditionalText={false}
           showBGText={true}
+          showInfoAtTheEnd={false}
         />
         <FeatureDetailsSection />
         <PushTrialSection
-          //bgColor
-          //color
-          order={1}
           flexDirection='column'
           textAlignSetting='center'
           btnColor={theme.colors.purple}
           showAdditionalText={true}
           showBGText={false}
+          showInfoAtTheEnd={true}
         />
       </StyledApp>
     </ThemeProvider>

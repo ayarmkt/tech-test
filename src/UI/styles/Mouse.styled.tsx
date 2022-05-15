@@ -1,7 +1,8 @@
 import styled from 'styled-components';
+import { Props } from '../Mouse';
 
 interface IMouseName {
-  bgColor: string;
+  bgColor: Props['bgColor'];
 }
 
 export const StyledMouseName = styled.div<IMouseName>`

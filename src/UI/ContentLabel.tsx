@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyledContentLabel } from './styles/ContentLabel.styled';
 
-interface Props {
+export interface Props {
   color: string;
   labelText: string;
 }

@@ -16,7 +16,6 @@ const GlobalStyles = createGlobalStyle<Props>`
     box-sizing: border-box;
     font: ${({ theme }) => theme.fonts.textRegular};
     color: ${({ theme }) => theme.colors.black}; 
-    
   }
 `;
 

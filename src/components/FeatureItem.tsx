@@ -1,10 +1,11 @@
-import React from 'react';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import ContentLabel from '../UI/ContentLabel';
 import SectionTitle from '../UI/SectionTitle';
-import { StyledFeatureItem } from './styles/FeatureItem.styled';
-import { StyledTextSection } from './styles/FeatureItem.styled';
+import {
+  StyledFeatureItem,
+  StyledTextSection,
+} from './styles/FeatureItem.styled';
 
 export interface Props {
   index: number;
@@ -24,6 +25,7 @@ const FeatureItem: React.FC<Props> = ({
   image,
 }): JSX.Element => {
   const themeContext = useContext(ThemeContext);
+
   return (
     <StyledFeatureItem direction={index % 2 === 0 ? 'row' : 'row-reverse'}>
       <StyledTextSection>
@@ -40,5 +42,3 @@ const FeatureItem: React.FC<Props> = ({
 };
 
 export default FeatureItem;
-
-// <StyledImageSection></StyledImageSection>

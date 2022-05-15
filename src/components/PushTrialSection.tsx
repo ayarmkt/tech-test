@@ -1,31 +1,33 @@
 import React from 'react';
 import Button from '../UI/Button';
 import SectionTitle from '../UI/SectionTitle';
-import { StyledPushTrialSection } from './styles/PushTrialSection.styled';
+import {
+  StyledPushTrialSection,
+  StyledBGText,
+  StyledAdditionalText,
+} from './styles/PushTrialSection.styled';
 import { BsCheck2 } from 'react-icons/bs';
-import { StyledBGText } from './styles/PushTrialSection.styled';
-import { StyledAdditionalText } from './styles/PushTrialSection.styled';
 
 export interface Props {
   bgColor?: string;
   color?: string;
-  order?: number;
   flexDirection: string;
   textAlignSetting?: string;
   btnColor: string;
   showAdditionalText: boolean;
   showBGText: boolean;
+  showInfoAtTheEnd: boolean;
 }
 
 const PushTrialSection: React.FC<Props> = ({
   bgColor,
   color,
-  order,
   flexDirection,
   textAlignSetting,
   btnColor,
   showAdditionalText,
   showBGText,
+  showInfoAtTheEnd,
 }) => {
   const iconStyle = { fill: color, verticalAlign: 'middle' };
 
@@ -33,10 +35,8 @@ const PushTrialSection: React.FC<Props> = ({
     <StyledPushTrialSection
       bgColor={bgColor}
       color={color}
-      order={order}
+      order={showInfoAtTheEnd ? 1 : 0}
       flexDirection={flexDirection}
-
-      //justifyContent={flexDirection === 'row' ? 'space-evenly' : 'center'}
     >
       {showAdditionalText && (
         <StyledAdditionalText>What are you waiting for?</StyledAdditionalText>
@@ -57,7 +57,7 @@ const PushTrialSection: React.FC<Props> = ({
       </ul>
       <Button
         text='Get started — It’s free!'
-        heightSetting='56px'
+        height='56px'
         padding='0 25px'
         bgColor={btnColor}
       />

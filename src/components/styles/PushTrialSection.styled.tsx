@@ -4,12 +4,12 @@ import { Props } from '../PushTrialSection';
 interface IPushTrialSection {
   bgColor: Props['bgColor'];
   flexDirection: Props['flexDirection'];
-  order?: Props['order'];
+  order: number;
   color: Props['color'];
 }
 
 export const StyledPushTrialSection = styled.section<IPushTrialSection>`
-  height: 35vh;
+  height: 300px;
   width: 100%;
   background-color: ${({ bgColor }) => bgColor};
   border-radius: 12px;

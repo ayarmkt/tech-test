@@ -28,7 +28,7 @@ export const StyledDetailsContainer = styled.div`
   display: grid;
   grid-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 120px;
+  grid-auto-rows: 140px;
   margin-bottom: 70px;
 `;
 
@@ -41,26 +41,27 @@ export const StyledArticle = styled.article<IStyledArticle>`
     0px 1px 1px rgba(27, 27, 26, 0.12), 0px 0px 0px 1px rgba(27, 27, 26, 0.12);
   display: grid;
   grid-template-rows: 1fr auto auto;
+  padding: 30px;
 
   img {
-    padding: 0 10px;
     width: 100%;
     grid-row: 1;
     align-self: center;
   }
 
   div {
-    padding: 30px;
+    h3,
+    p {
+      color: ${({ color }) => color};
+    }
 
     h3 {
       font: ${({ theme }) => theme.fonts.contentTitle};
-      color: ${({ color }) => color};
       grid-row: 2;
     }
 
     p {
       font: ${({ theme }) => theme.fonts.textSmall};
-      color: ${({ color }) => color};
       grid-row: 3;
     }
   }

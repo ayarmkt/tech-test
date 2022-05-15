@@ -1,9 +1,12 @@
-import React from 'react';
-import CompanyLogo from '../assets/company-logo.png';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-import Button from '../UI/Button';
-import { StyledNavBar, StyledLoginBtn } from './styles/NavBar.styled';
+import CompanyLogo from '../assets/company-logo.png';
+import {
+  StyledNavBar,
+  StyledLoginBtn,
+  StyledHomeLink,
+  StyledTrialBtn,
+} from './styles/NavBar.styled';
 import { BsChevronDown } from 'react-icons/bs';
 
 const NavBar: React.FC = () => {
@@ -16,9 +19,9 @@ const NavBar: React.FC = () => {
 
   return (
     <StyledNavBar>
-      <a href='#'>
+      <StyledHomeLink>
         <img src={CompanyLogo} alt='company logo' />
-      </a>
+      </StyledHomeLink>
       <ul>
         <li>
           Product <BsChevronDown style={iconStyle} />
@@ -31,9 +34,9 @@ const NavBar: React.FC = () => {
       </ul>
       <div>
         <StyledLoginBtn>Log in</StyledLoginBtn>
-        <Button
+        <StyledTrialBtn
           text='Start 14-day trial'
-          heightSetting='40px'
+          height='40px'
           padding='0 16px'
           bgColor={themeContext.colors.purple}
         />

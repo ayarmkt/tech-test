@@ -1,21 +1,16 @@
-//import classes from './Button.module.css';
 import React from 'react';
 import { StyledButton } from './styles/Button.styled';
 
 export interface Props {
   text: string;
   bgColor: string;
-  heightSetting: string;
+  height: string;
   padding: string;
 }
 
-const Button: React.FC<Props> = ({ text, heightSetting, padding, bgColor }) => {
+const Button: React.FC<Props> = ({ text, height, padding, bgColor }) => {
   return (
-    <StyledButton
-      heightSetting={heightSetting}
-      padding={padding}
-      bgColor={bgColor}
-    >
+    <StyledButton height={height} padding={padding} bgColor={bgColor}>
       {text}
     </StyledButton>
   );

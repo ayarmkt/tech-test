@@ -1,10 +1,7 @@
-import React from 'react';
-import Button from '../UI/Button';
-import { StyledHero } from './styles/Hero.styled';
-import { useContext } from 'react';
+import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-import { StyledMouse } from './styles/Hero.styled';
-import { StyledHeroTitle } from './styles/Hero.styled';
+import Button from '../UI/Button';
+import { StyledHero, StyledMouse, StyledHeroTitle } from './styles/Hero.styled';
 
 const Hero: React.FC = (): JSX.Element => {
   const themeContext = useContext(ThemeContext);
@@ -48,7 +45,7 @@ const Hero: React.FC = (): JSX.Element => {
         </p>
         <Button
           text='Get started — It’s free!'
-          heightSetting='56px'
+          height='56px'
           padding='0 23px'
           bgColor={themeContext.colors.purple}
         />
